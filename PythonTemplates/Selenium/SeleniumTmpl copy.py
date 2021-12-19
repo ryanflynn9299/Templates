@@ -4,7 +4,6 @@ A Template for a basic Selenium project
 
 import time
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
 
 def main():
@@ -23,10 +22,10 @@ def main():
     # right click > copy > copy full XPath
     # paste between quotes like in this template:
     # driver.find_element_by_xpath("")
-    element = driver.find_element_by_xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")
-    element.send_keys("Hello World!")  # Search Hello World on Google
+    #element = driver.find_element_by_xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")
+    #element.send_keys("Hello World!")  # Search Hello World on Google
 
-    element2 = driver.find_element_by_xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]")
+    element2 = driver.find_element_by_xpath('//*[@id="skipnav"]')
     element2.click()
 
     time.sleep(300)  # for staying on web page
